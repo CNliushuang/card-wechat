@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+<view class="home_wrapper">
+	<view class="swiper">
+		<swiper indicator-dots="{{indicatorDots}}"
+		  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		  <block wx:for="{{imgUrls}}" wx:key="*this">
+		    <swiper-item>
+		      <image src="{{item}}" class="slide-image"/>
+		    </swiper-item>
+		  </block>
+		</swiper>
+		<view class="info">
+			<view class="user clearfix">
+				<view class="icon">
+					
+				</view>
+				<view class="content">
+					<view class="name">沈腾</view>
+					<view class="summary">开心麻花团队</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="product_list">
+		sdfsfss
+	</view>
+</view>
